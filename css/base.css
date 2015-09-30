@@ -1,0 +1,29 @@
+.landing-text h1{
+    font-family: 'Over the Rainbow', cursive;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 200px;
+}
+
+.landing-text h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: -15px;
+    letter-spacing: .3em;
+}
+
+.begin-button a {
+    color: #FF6699;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: .1em;
+    margin: 70px auto;
+    display: block; 
+}
+
+.begin-button a:hover {
+    text-decoration: none;
+    color: #B84A6E;
+}

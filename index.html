@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Space Thyme Print</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A generator of doodles, thoughts, and positive vibes.">
+        <meta name="author" content="Kelly Robinson">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link href='https://fonts.googleapis.com/css?family=Over+the+Rainbow|Oxygen: 400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!--<script type="text/javascript" src="generator.js"></script>-->
+        <script type="text/javascript">
+            var MORNING = 0; 
+            var AFTERNOON = 12; 
+            var EVENING = 18;
+
+            function greeting( ) {
+                var sign = document.getElementById("greet");
+                var hour = new Date().getHours();
+                var mins = new Date().getMinutes();
+                hour = hour + mins / 60;
+
+                if (hour >= MORNING && hour < AFTERNOON) {
+                    sign.innerHTML = "good morning";
+                //sign.className = "OPEN";//
+                } 
+                else if (hour >= AFTERNOON && hour < EVENING) {
+                    sign.innerHTML = "good afternoon";
+                }
+                else {
+                    sign.innerHTML = "good evening";
+                //sign.className = "CLOSED";//
+                }
+            }
+        </script>
+    </head>
+    
+    <body onload="greeting();">
+        <div class="landing-text">
+            <h1 id="greet"></h1>
+            <h2><span style="font-weight: 700">PRIME</span> & MAKE REASON</h2>
+        </div>
+        
+        <div class="begin-button">
+            <a href="images.html">BEGIN</a>
+        </div>
+    </body>
+</html>
